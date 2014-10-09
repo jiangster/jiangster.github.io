@@ -1,0 +1,306 @@
+.fadein {
+	opacity: 0;
+}
+
+
+/* universal */
+
+header {
+	position:fixed;
+	right:0;
+	left:0;
+	z-index:100;
+}
+
+section {
+	position: relative;
+	z-index: 200;
+	top: 82em;
+	/* box-shadow: 0px -1px 25px #ddd;*/
+}
+
+
+.footer {
+	height: 10em;
+	width: auto;
+	background-color: gray ;
+}
+
+.bg { 
+	position: fixed;
+	top: 1.65em;
+	left: 1.5em;
+	background: #ffffff;
+	width: 2.8em;
+	height: 2.7em;
+	opacity: 0;
+	z-index: 1000;
+}
+
+.show {
+  opacity: 1;
+}
+
+.transition {    
+  -webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+.navbar {
+	position: fixed;
+	left: 2em;
+	top: 2em;
+	z-index: 201;
+
+	i:hover {
+		cursor: pointer;
+	}
+}
+
+/* General styles for all menus */
+.cbp-spmenu {
+	background: @color-black;
+	position: fixed;
+}
+
+.cbp-spmenu h3 {
+	padding: 20px;
+	margin: 0;
+	text-align: center;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #fff;
+	font-size: 1.1em;
+	text-decoration: none;
+	text-align: center;
+}
+
+.cbp-spmenu a:hover {
+	color: #999999;
+}
+
+.cbp-spmenu a:active {
+	background: #afdefa;
+	color: #47a3da;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+	padding: 1em;
+}
+
+
+/* Vertical menu that slides from the right */
+
+
+
+.cbp-spmenu-right {
+	right: -240px;
+}
+
+
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+
+
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toleft {
+	left: -240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em){
+
+	.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+
+	.cbp-spmenu-top {
+		top: -110px;
+	}
+
+	.cbp-spmenu-bottom {
+		bottom: -110px;
+	}
+
+}
+
+@media screen and (max-height: 26.375em){
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.cbp-spmenu-left,
+	.cbp-spmenu-push-toleft {
+		left: -190px;
+	}
+
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+
+	.cbp-spmenu-push-toright {
+		left: 190px;
+	}
+}
+
+/* index.html */
+
+#welcome {
+	height: 100%;
+	top: 35em;
+}
+
+
+
+.block-medium{
+	height: 60em;
+}
+
+
+.block-desc{
+	background-color: #efefef;
+	display: table;
+
+	hgroup{
+		position: relative;
+		text-align: center;
+		vertical-align: middle;
+		display: table-cell;
+	}
+
+}
+
+.block-small{
+	height: 30em;
+}
+
+
+.block-half {
+	display: block;
+	width: 100%;
+	height: 30em;
+}
+
+#block-profile{
+	background-color: white;
+	height: 30em;
+
+	hgroup{
+		padding: 10em;
+	}
+}
+
+
+/*work.html*/
+
+.banner {
+	height: 30em;
+	width: 100%;
+	background-color: #efefef;
+	position: fixed;
+	z-index: 100;
+
+	.title{
+		position: absolute;
+		height: 40%;
+		width: 40%;
+		bottom: 0;
+	}
+
+	h1 {
+		position: relative;
+		bottom: 0;
+		font-size: 20em;
+	}
+}
+
+
+
+.section-work {
+	background-color: #ffffff;
+	width: 100%;
+	height:200em;
+}
+
+
+
+/*------------------*/
+
+/* Effect 5: same word slide in */
+.link-effect a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+	overflow: hidden;
+	padding: 0 4px;
+	height: 1em;
+}
+
+.link-effect a span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.link-effect a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.link-effect a:hover span,
+.link-effect a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
