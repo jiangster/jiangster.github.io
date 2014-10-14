@@ -14,7 +14,10 @@
   <link rel="stylesheet" href="css/kube.css" type="text/css" media="all" />
   <script src="js/jquery.min.js"></script>
   <script src="js/index.js"></script>
-  <script src="external/neatshow.min.js"></script>
+
+
+
+
 </head>
 
 <body class="cbp-spmenu-push">
@@ -161,6 +164,31 @@ grid with half half
 
     </section>
 
+
+
+
+<!--   <div id="custom-nav">
+  <div class="units-row">
+    <div class="unit-centered unit-90">
+        <header class="group">
+          <nav class="navbar navbar-left">
+            <ul>
+              <li>logo</li>
+            </ul>
+          </nav>
+          <nav class="navbar navbar-right">
+            <ul>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Lily</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+     </div>
+   </div> -->
+
+
    <script src="external/imgliquid/imgLiquid-min.js"></script>
    <script src="external/sidemenu/classie.js"></script>
    <script src="external/sidemenu/modernizr.custom.js"></script>
@@ -186,11 +214,24 @@ grid with half half
       }
     }
   </script>
-
   <script>
-$('img').neatShow();
- </script>
- 
+
+        // Set options
+        var options = {
+          offset: '#showHere',
+          classes: {
+            clone:   'banner--clone',
+            stick:   'banner--stick',
+            unstick: 'banner--unstick'
+          }
+        };
+
+        // Initialise with options
+        // var banner = new Headhesive('.banner', options);
+
+        // Headhesive destroy
+        // banner.destroy();
+      </script>
       <script>$(window).fadeThis({speed: 2000});</script>
     </body>
     </html>

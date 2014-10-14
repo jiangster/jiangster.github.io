@@ -2,6 +2,9 @@ $(document).ready(function() {
     $(".imgLiquidFill").imgLiquid();
 });
 
+$(document).ready(function() {
+    $('body').fadeloader({ });
+});
 
 // $(document).ready(function() { 
 //     /* Every time the window is scrolled ... */

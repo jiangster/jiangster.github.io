@@ -1,10 +1,12 @@
 
 // Universal
 @import url(http://fonts.googleapis.com/css?family=Lora:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
 
 .fadein {
 	opacity: 0;
 }
+
 
 header {
 	position:fixed;
@@ -120,27 +122,36 @@ section {
 	position: fixed;
 }
 
-.cbp-spmenu h3 {
+.cbp-spmenu h4 {
 	padding: 20px;
 	margin: 0;
 	text-align: center;
+	color: #676767;
+	font-style: normal;
 }
+
 
 .cbp-spmenu a {
 	display: block;
-	color: #fff;
-	font-size: 1.1em;
+	color: #676767;
+	font-size: 1.3em;
 	text-decoration: none;
 	text-align: center;
+	font-family: 'Lora', serif;
+	font-style: italic;
 }
 
 .cbp-spmenu a:hover {
-	color: #999999;
+	color: #ffffff;
+	-webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
 }
 
 .cbp-spmenu a:active {
-	background: #afdefa;
-	color: #47a3da;
+	color: #ffffff;
 }
 
 /* Orientation-dependent styles for the content of the menu */
@@ -241,11 +252,9 @@ section {
 
 .block-medium{
 	height: 60em;
-}
 
-@media only screen and (max-width: 1600px) {
-	.block-medium {
-		height: 30em;
+	img {
+		display: none;
 	}
 }
 
@@ -260,7 +269,9 @@ section {
 	  top: 50%; left: 50%;
 	  transform: translateX(-50%) translateY(-50%);
 	  color: #fff;
-	  font-size: 4.5em;
+	  font-size: 4em;
+	  font-family: 'Lora', Serif;
+	  font-style: italic;
 	}
 }
 
@@ -268,7 +279,7 @@ section {
 	position: absolute;
  	top: 0; bottom: 0; right: 0; left: 0;
  	opacity: 0;
- 	background: rgba(0,0,0,0.9);
+ 	background: rgba(0,0,0,0.8);
  	transition: 0.4s ease-out;
 }
 
@@ -359,3 +370,16 @@ section {
 }
 
 
+// Responsive
+
+@media only screen and (max-width: 1600px) {
+	.block-medium {
+		height: 30em;
+	}
+
+	.item {
+		h1 {
+			font-size: 2em;
+		}
+	}
+}
