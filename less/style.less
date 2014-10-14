@@ -27,18 +27,18 @@ section {
 	background-color: gray ;
 }
 
-.bglong {
+.bg {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 0.5em;
+	height: 6em;
 	width: 100%;
 	background-color: #ffffff;
 	opacity: 0;
 	z-index: 1000;
 }
 
-.bg { 
+/*.bg { 
 	position: fixed;
 	top: 1.65em;
 	left: 1.5em;
@@ -47,7 +47,7 @@ section {
 	height: 2.7em;
 	opacity: 0;
 	z-index: 1000;
-}
+}*/
 
 .show {
   opacity: 1;
@@ -63,13 +63,49 @@ section {
 .navbar {
 	position: fixed;
 	left: 2em;
-	top: 2em;
+	top: 2.5em;
 	z-index: 201;
 
 	i:hover {
 		cursor: pointer;
+		color: black;
 	}
 }
+
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: '';
+}
+.nav-toggle span:before {
+  top: -10px;
+}
+.nav-toggle span:after {
+  bottom: -10px; 
+}
+
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+.nav-toggle.active span {
+  background-color: transparent;
+}
+.nav-toggle.active span:before, .nav-toggle.active span:after {
+  top: 0;
+}
+.nav-toggle.active span:before {
+  transform: rotate(90deg) translate(0,15px);
+}
+.nav-toggle.active span:after {
+  transform: translate(0,15px) scaleX(0.6);
+}
+
+
 
 /* General styles for all menus */
 .cbp-spmenu {
@@ -216,7 +252,8 @@ section {
 	width: 100%;
 	height: 100%;
 
-	i {
+	i,
+	h1 {
 	  position: absolute;
 	  top: 50%; left: 50%;
 	  transform: translateX(-50%) translateY(-50%);
@@ -228,7 +265,7 @@ section {
 	position: absolute;
  	top: 0; bottom: 0; right: 0; left: 0;
  	opacity: 0;
- 	background: rgba(0,0,0,.5);
+ 	background: rgba(0,0,0,0.8);
  	transition: 0.4s ease-out;
 }
 
