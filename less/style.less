@@ -7,7 +7,6 @@
 	opacity: 0;
 }
 
-
 header {
 	position:fixed;
 	right:0;
@@ -20,7 +19,6 @@ section {
 	background-color: #ffffff;
 	z-index: 200;
 	top: 82em;
-	/* box-shadow: 0px -1px 25px #ddd;*/
 }
 
 
@@ -136,7 +134,8 @@ section {
 	color: #676767;
 	font-size: 1.3em;
 	text-decoration: none;
-	text-align: center;
+	margin-left: 2em;
+	text-align: left;
 	font-family: 'Lora', serif;
 	font-style: italic;
 }
@@ -252,10 +251,6 @@ section {
 
 .block-medium{
 	height: 60em;
-
-	img {
-		display: none;
-	}
 }
 
 .item{
@@ -269,7 +264,7 @@ section {
 	  top: 50%; left: 50%;
 	  transform: translateX(-50%) translateY(-50%);
 	  color: #fff;
-	  font-size: 4em;
+	  font-size: 3em;
 	  font-family: 'Lora', Serif;
 	  font-style: italic;
 	}
@@ -341,7 +336,7 @@ section {
 /*work.html*/
 
 .banner {
-	height: 30em;
+	height:30em;
 	width: 100%;
 	background-color: #efefef;
 	position: fixed;
@@ -350,23 +345,35 @@ section {
 	.title{
 		position: absolute;
 		height: 40%;
-		width: 40%;
+		width: 100%;
 		bottom: 0;
 	}
 
 	h1 {
 		position: relative;
 		bottom: 0;
-		font-size: 20em;
+		font-size: 6em;
 	}
 }
 
-
+img {
+	display: none;
+}
 
 .section-work {
 	background-color: #ffffff;
 	width: 100%;
 	height:auto;
+	padding-top: 4em;
+
+	h2 {
+		padding-bottom: 0.5em;
+	}
+
+	p {
+		font-family: 'Lora', serif;
+		font-size: 1.3em;
+	}
 }
 
 
@@ -380,6 +387,45 @@ section {
 	.item {
 		h1 {
 			font-size: 2em;
+		}
+	}
+
+	.banner {
+
+	.title{
+		position: absolute;
+		height: 35%;
+		width: 100%;
+		bottom: 0;
+	}
+
+		h1 {
+			font-size: 5em;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.block-medium {
+		height: 30em;
+	}
+
+	.item {
+		h1 {
+			font-size: 2em;
+		}
+	}
+
+	.banner {
+
+	.title{
+		position: absolute;
+		height: 20%;
+		width: 100%;
+		bottom: 0;
+	}
+		h1 {
+			font-size: 3.5em;
 		}
 	}
 }

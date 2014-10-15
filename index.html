@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/kube.css" type="text/css" media="all" />
   <script src="js/jquery.min.js"></script>
   <script src="js/index.js"></script>
-  <script src="external/neatshow.min.js"></script>
+  <script src="external/neatshow/neatshow.min.js"></script>
 </head>
 
 <body class="cbp-spmenu-push">
@@ -47,7 +47,6 @@
   <section>
   
 
-    <!--     <div class="fadein" style="margin:20px;padding:50px;background-color:red;">hello</div> -->
     <div class="units-row units-split end">
       <div class="unit-50 imgLiquidFill imgLiquid block-medium">
         <div class="item">
@@ -130,14 +129,6 @@ grid with half half
         </a>
       </div>
     </div>
-
-<!--       <div class="units-row units-split end">
-        <div class="unit-25 imgLiquidFill imgLiquid block-small"><a href="#"><img src="http://placehold.it/500x500"/></a></div>
-        <div class="unit-25 imgLiquidFill imgLiquid block-small"><a href="#"><img src="http://placehold.it/500x500/d9d9d9/000000"/></a></div>
-        <div class="unit-25 imgLiquidFill imgLiquid block-small"><img src="http://placehold.it/500x500"/></div>
-        <div class="unit-25 imgLiquidFill imgLiquid block-small"><img src="http://placehold.it/500x500/d9d9d9/000000"/></div>
-      </div> -->
-
       
       <div id="block-profile">
         <div class="units-row end">
@@ -172,7 +163,6 @@ grid with half half
      showRightPush = document.getElementById( 'showRightPush' ),
      body = document.body;
 
-
      showRightPush.onclick = function() {
       classie.toggle( this, 'active' );
       classie.toggle( body, 'cbp-spmenu-push-toleft' );
@@ -187,10 +177,7 @@ grid with half half
     }
   </script>
 
-  <script>
-$('img').neatShow();
- </script>
- 
+
       <script>$(window).fadeThis({speed: 2000});</script>
     </body>
     </html>
