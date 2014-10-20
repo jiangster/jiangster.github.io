@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lily - Space Junk</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Main  -->
+  <link rel="stylesheet" href="css/kube.css" type="text/css" media="all" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+
+<body class="cbp-spmenu-push">
+
+  <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+    <a href="index.html"><h3>Lily Jiang.</h3></a>
+    <a href="#">Design</a>
+    <a href="#">Philosophy</a>
+    <a href="#">Find me</a>
+  </nav>
+
+  <nav class="navbar">
+    <ul>
+      <li><a class="nav-toggle" id="showRightPush"><span></span></a></li>
+    </ul>
+  </nav>
+
+
+
+  <div class="banner">
+      <div class="units-row end">
+        <div class="unit-centered unit-70">
+          <div class="title">
+          <h1>Space Junk</h1>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<section style="top:30em">
+
+<div class="section-work">
+    <div class="units-row end">
+      <div class="unit-centered unit-70">
+        <br><br><br>
+        <p>April 2013 / Character Design</p>
+            <div class="units-row end">
+
+              <div class="unit-50">
+            <h2>Assignment</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<p>
+              </div>
+              <div class="unit-50">
+              <h2>Solution</h2><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p></div>
+
+          </div>
+          <br><br>
+          <br><br>
+          
+          <img src="img/tommy1.png"/>
+      
+    </div>
+  </div>
+
+  </section>
+
+
+
+  <script src="external/imgliquid/imgLiquid-min.js"></script>
+  <script src="external/sidemenu/classie.js"></script>
+  <script src="external/sidemenu/modernizr.custom.js"></script>
+  <script src="external/fadethis/jquery.fadethis.min.js"></script>
+
+
+  <script>
+  var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+  showRightPush = document.getElementById( 'showRightPush' ),
+  body = document.body;
+
+
+  showRightPush.onclick = function() {
+    classie.toggle( this, 'active' );
+    classie.toggle( body, 'cbp-spmenu-push-toleft' );
+    classie.toggle( menuRight, 'cbp-spmenu-open' );
+    disableOther( 'showRightPush' );
+  };
+
+  function disableOther( button ) {
+    if( button !== 'showRightPush' ) {
+      classie.toggle( showRightPush, 'disabled' );
+    }
+  }
+  </script>
+  <script>
+
+        // Set options
+        var options = {
+          offset: '#showHere',
+          classes: {
+            clone:   'banner--clone',
+            stick:   'banner--stick',
+            unstick: 'banner--unstick'
+          }
+        };
+
+         </script>
+
+           <script>
+$('img').neatShow();
+ </script>
+        <script>$(window).fadeThis({speed: 2000});</script>
+
+      </body>
+      </html>

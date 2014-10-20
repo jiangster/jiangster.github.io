@@ -6,29 +6,6 @@ $(document).ready(function() {
     $('body').fadeloader({ });
 });
 
-// $(document).ready(function() { 
-//     /* Every time the window is scrolled ... */
-//     $(window).scroll( function(){
-    
-//         /* Check the location of each desired element */
-//         $('.fadein').each( function(i){
-            
-//             bottom_of_object = $(this).offset().top + $(this).height();
-//             bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-//             /* If the object is completely visible in the window, fade it it */
-//             if( bottom_of_window > bottom_of_object ){
-                
-//                 $(this).fadeTo(500,1)
-                    
-//             }
-            
-//         }); 
-    
-//     });
-    
-// });
-
 
 $(window).scroll(function() {
 // 100 = The point you would like to fade the nav in.

@@ -33,11 +33,24 @@ section {
 	height: 10em;
 	width: auto;
 	background-color: #ffffff;
-	text-align: center;
-	padding-top: 2em;
-	i {
-		padding: 0.2em;
+	text-align: left;
+	padding-top: 6em;
+
+	p {
+		font-family: "Lora", serif;
+		font-style: italic;
+		color: gray;
 	}
+	
+	a {
+		text-decoration: none;
+		color: #000000;
+	}
+
+	a:hover {
+		color: #0000ff;
+	}
+
 }
 
 .bg {
@@ -129,7 +142,9 @@ section {
 	padding: 20px;
 	margin: 0;
 	text-align: center;
-	color: #676767;
+	color: #ffffff;
+	font-family: "Helvetica Neue", sans-serif;
+	font-style: normal;
 }
 
 
@@ -138,6 +153,8 @@ section {
 	color: #676767;
 	text-decoration: none;
 	text-align: center;
+	font-family: "Lora", serif;
+	font-style: italic;
 }
 
 .cbp-spmenu a:hover {
@@ -247,17 +264,9 @@ section {
 
 	h1 {
 		font-size: 15em;
-		margin-bottom: 0;
 	}
 
 }
-
-/*#welcome {
-	height: 100%;
-	top: 35em;
-}*/
-
-
 
 .block-medium{
 	height: 45em;
@@ -278,6 +287,10 @@ section {
 	  font-family: 'Lora', Serif;
 	  font-style: italic;
 	}
+}
+
+.hideme {
+	opacity: 0;
 }
 
 .item-desc {
@@ -326,22 +339,7 @@ section {
 
 
 
-/*#block-profile{
-	background-color: white;
-	display: block;
-	padding-top: 5em;
-	padding-bottom: 5em;
 
-
-	p {
-		font-family: 'Lora', serif;
-		font-weight: 400;
-		font-size: 1.5em;
-		padding-left: 0;
-	}
-
-	
-}*/
 
 
 /*work.html*/
@@ -368,9 +366,6 @@ section {
 	}
 }
 
-img {
-	display: none;
-}
 
 .section-work {
 	background-color: #ffffff;
@@ -385,6 +380,11 @@ img {
 	p {
 		font-family: 'Lora', serif;
 		font-size: 1.3em;
+	}
+
+	#section-caption {
+		color: #bdc3c7;
+		font-style: italic;
 	}
 }
 
@@ -414,6 +414,16 @@ img {
 
 		h1 {
 			font-size: 5em;
+		}
+	}
+
+	section {
+		top: 30em;
+	}
+
+	#splash {
+		h1 {
+			font-size: 10em;
 		}
 	}
 
@@ -447,4 +457,14 @@ img {
 			font-size: 3.5em;
 		}
 	}
+
+	section {
+		top: 25em;
+	}
+		#splash {
+		h1 {
+			font-size: 7em;
+		}
+	}
+
 }
