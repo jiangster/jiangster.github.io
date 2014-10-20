@@ -3,6 +3,11 @@
 @import url(http://fonts.googleapis.com/css?family=Lora:400,400italic);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
 
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 .fadein {
 	opacity: 0;
 }
@@ -10,17 +15,17 @@
 header {
 	position:fixed;
 	top: 0;
-	right:0;
-	left:0;
 	width: 100%;
 	z-index:100;
+	background-color: white;
+	height: 100%;
 }
 
 section {
 	position: relative;
 	background-color: #ffffff;
 	z-index: 200;
-	top: 50em;
+	top: 40em;
 }
 
 
@@ -29,6 +34,7 @@ section {
 	width: auto;
 	background-color: #ffffff;
 	text-align: center;
+	padding-top: 2em;
 	i {
 		padding: 0.2em;
 	}
@@ -45,7 +51,7 @@ section {
 	z-index: 1000;
 }
 
-/*.bg { 
+/*.bg-square { 
 	position: fixed;
 	top: 1.65em;
 	left: 1.5em;
@@ -56,15 +62,11 @@ section {
 	z-index: 1000;
 }*/
 
-.show {
-  opacity: 1;
-}
-
 .transition {    
-  -webkit-transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
-	-o-transition: all 1s ease-in-out;
-	transition: all 1s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
 }
 
 .navbar {
@@ -108,8 +110,9 @@ section {
   top: 0;
 }
 .nav-toggle.active span:before {
-  transform: rotate(90deg) translate(0,13px);
+  transform: rotate(90deg) translate(0,10px);
 }
+
 .nav-toggle.active span:after {
   transform: translate(0,15px) scaleX(0.5);
 }
@@ -122,24 +125,19 @@ section {
 	position: fixed;
 }
 
-.cbp-spmenu h4 {
+.cbp-spmenu h3 {
 	padding: 20px;
 	margin: 0;
 	text-align: center;
 	color: #676767;
-	font-style: normal;
 }
 
 
 .cbp-spmenu a {
 	display: block;
 	color: #676767;
-	font-size: 1.3em;
 	text-decoration: none;
-	margin-left: 2em;
-	text-align: left;
-	font-family: 'Lora', serif;
-	font-style: italic;
+	text-align: center;
 }
 
 .cbp-spmenu a:hover {
@@ -244,6 +242,16 @@ section {
 
 /* index.html */
 
+#splash {
+	top: 10em;
+
+	h1 {
+		font-size: 15em;
+		margin-bottom: 0;
+	}
+
+}
+
 /*#welcome {
 	height: 100%;
 	top: 35em;
@@ -276,7 +284,7 @@ section {
 	position: absolute;
  	top: 0; bottom: 0; right: 0; left: 0;
  	opacity: 0;
- 	background: rgba(0,0,0,0.8);
+ 	background: rgba(0,0,0,1);
  	transition: 0.4s ease-out;
 }
 
@@ -290,12 +298,17 @@ section {
 .block-desc{
 	background-color: #000000;
 	display: table;
+	position: relative;
 
-	hgroup{
-		position: relative;
-		text-align: center;
-		vertical-align: middle;
-		display: table-cell;
+		p {
+	  position: absolute;
+	  top: 50%; left: 50%;
+	  transform: translateX(-50%) translateY(-50%);
+	  color: #fff;
+	  font-size: 1.2em;
+	  font-family: 'Lora', Serif;
+	  font-style: italic;
+	  text-align: left;
 	}
 
 }
@@ -313,26 +326,22 @@ section {
 
 
 
-#block-profile{
+/*#block-profile{
 	background-color: white;
 	display: block;
+	padding-top: 5em;
+	padding-bottom: 5em;
 
-	#block-profile-content {
-		margin: 8em;
-	}
-
-	h1 {
-		padding: 2em;
-	}
 
 	p {
 		font-family: 'Lora', serif;
 		font-weight: 400;
-		font-size: 2em;
+		font-size: 1.5em;
+		padding-left: 0;
 	}
 
 	
-}
+}*/
 
 
 /*work.html*/
@@ -383,6 +392,7 @@ img {
 // Responsive
 
 @media only screen and (max-width: 1600px) {
+
 	.block-medium {
 		height: 30em;
 	}
@@ -406,9 +416,15 @@ img {
 			font-size: 5em;
 		}
 	}
+
 }
 
 @media only screen and (max-width: 767px) {
+
+	.show {
+  		opacity: 1;
+	}
+
 	.block-medium {
 		height: 30em;
 	}
