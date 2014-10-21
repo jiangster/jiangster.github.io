@@ -36,6 +36,7 @@ section {
 	text-align: left;
 	padding-top: 6em;
 
+
 	p {
 		font-family: "Lora", serif;
 		font-style: italic;
@@ -49,6 +50,15 @@ section {
 
 	a:hover {
 		color: #0000ff;
+			-webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+	}
+
+	blockquote {
+		opacity: 0.4;
 	}
 
 }
@@ -389,6 +399,28 @@ section {
 }
 
 
+.back-next {
+	background-color: #ffffff;
+	height: 3em;
+	a {
+		text-decoration: none;
+		color: #000000;
+		opacity: 0.1;
+		font-family: "Lora", serif;
+		font-style: italic;
+	}
+
+	a:hover {
+		opacity: 0.7;
+		-webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+	}
+}
+
+
 // Responsive
 
 @media only screen and (max-width: 1600px) {
@@ -426,6 +458,7 @@ section {
 			font-size: 10em;
 		}
 	}
+
 
 }
 
@@ -466,5 +499,4 @@ section {
 			font-size: 7em;
 		}
 	}
-
 }
