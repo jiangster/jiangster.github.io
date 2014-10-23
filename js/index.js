@@ -2,9 +2,7 @@ $(document).ready(function() {
     $(".imgLiquidFill").imgLiquid();
 });
 
-$(document).ready(function() {
-    $('body').fadeloader({ });
-});
+
 
 
 $(window).scroll(function() {
