@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lily - iPhone Game</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Main  -->
+  <link rel="stylesheet" href="css/kube.css" type="text/css" media="all" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+
+</head>
+
+<body class="cbp-spmenu-push">
+
+  <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+    <a href="index.html"><h3>L</h3></a>
+    <a href="index.html#work" style="color:#ffffff">Work</a>
+    <a href="about.html">About</a>
+    <a href="mailto:itslilyjiang@gmail.com">Email</a>
+  </nav>
+
+  <nav class="navbar">
+    <ul>
+      <li><a class="nav-toggle" id="showRightPush"><span></span></a></li>
+    </ul>
+  </nav>
+
+
+
+  <div class="banner">
+    <div class="units-row end">
+      <div class="unit-centered unit-65">
+        <div class="title">
+          <h1 class="slide-top">Pixel Game</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section style="top:25em">
+
+    <div class="section-work">
+      <div class="units-row end">
+        <div class="unit-centered unit-65">
+          
+          <p id="section-caption" class="slide-top">November 2014 - ongoing / Game Design</p>
+          <div class="units-row end slide-top">
+
+            <div class="unit-50">
+              <h2>Project: "The Leone Ranger"</h2><p>For our Global Media Project, my team of 6 chose to develop an educational adventure game aimed at teaching young children in West Africa about the Ebola virus, safe sanitation practices and preventative measures in response to the Ebola outbreak. We designed it with the understanding that such a heavy topic is difficult to address in a game, and with careful planning and research we were able to integrate a program of knowledge into a channel that can be appropriately delivered to educate the young audience.</p>
+            </div>
+            <div class="unit-50">
+              <h2>Development &amp; Design</h2><p>The Leone Ranger is currently being developed for the iPhone 4 (popular platform for residents of Sierra Leone), programmed through GameSalad. <br><br> The game is an adventure platformer that features educational dialogue, mini games, and fun/light graphics. I designed the game art to accurately portray the style, culture, and environment of Sierra Leone, with all sprites crafted in a pixel art style. 
+            </p></div>
+
+          </div>
+          <br>
+
+                
+ 
+
+              <figure class="slide-top">
+              <img src="img/pixelart.jpg" alt="character design"/><br><br>
+              <figcaption>Sprite sheet and various graphic components</figcaption>
+            </figure>
+                            <br><br>
+               <p class="text-centered">Example gameplay on the iPhone 4. The game is set to come out early December. Stay tuned!</p>
+
+            <img id="iphone" src="img/rangerblack.jpg" alt="The Leone Ranger game"/>
+          <br><br><br>
+          <div class="back-next text-centered">
+            <h1><a href="uwbweb.html">Back</a> | <a href="logos.html">Next</a></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="units-row end">
+          <div class="unit-65 centered">
+            <hr>
+            <div class="units-row end">
+              <div class="unit-50">
+
+                <h1><a href="https://github.com/jiangster/" target="_blank">GitHub</a><br>
+                  <a href="https://www.linkedin.com/pub/lily-jiang/8a/205/2b4" target="_blank">LinkedIn</a></h1>
+                  <p>&copy; Lily Jiang 2014</p>
+                </div>
+                <div class="unit-50">
+                  <blockquote>
+                    Experience: that most brutal of teachers. But you learn, my God do you learn.<br>
+                    <small>C.S.Lewis</small> 
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <script src="external/imgliquid/imgLiquid-min.js"></script>
+    <script src="external/sidemenu/classie.js"></script>
+    <script src="external/sidemenu/modernizr.custom.js"></script>
+    <script src="external/fadethis/jquery.fadethis.min.js"></script>
+
+
+    <script>
+    var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+    showRightPush = document.getElementById( 'showRightPush' ),
+    body = document.body;
+
+
+    showRightPush.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( body, 'cbp-spmenu-push-toleft' );
+      classie.toggle( menuRight, 'cbp-spmenu-open' );
+      disableOther( 'showRightPush' );
+    };
+
+    function disableOther( button ) {
+      if( button !== 'showRightPush' ) {
+        classie.toggle( showRightPush, 'disabled' );
+      }
+    }
+    </script>
+    <script>
+
+        // Set options
+        var options = {
+          offset: '#showHere',
+          classes: {
+            clone:   'banner--clone',
+            stick:   'banner--stick',
+            unstick: 'banner--unstick'
+          }
+        };
+
+        </script>
+
+        <script>$(window).fadeThis({
+          speed: 500,
+          offset: -800,
+          reverse: false,
+          distance: 0
+        });</script>
+      </body>
+
+      </html>
