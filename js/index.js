@@ -4,6 +4,44 @@ $(document).ready(function() {
 
 
 
+/* TRIGGERING THE NAVIGATION BAR */
+
+$(document).ready(function() {
+        $(".nav-toggle").trigger('click');
+});
+
+$(window).scroll(function() {
+// 100 = The point you would like to fade the nav in.
+  
+    if ($(window).scrollTop() > 250 ){
+    
+        $(".cbp-spmenu").css("background","white");
+    
+  } else {
+    
+    $(".cbp-spmenu").css("background","rgba(0,0,0,0)");
+    
+    };      
+});
+
+$(window).scroll(function() {
+// 100 = The point you would like to fade the nav in.
+  
+    if ($(window).scrollTop() > 150 ){
+    
+        $('nav.navbar').addClass('nav-toggle');
+    
+  } else {
+    
+    $('nab.navbar').removeClass('nav-toggle');
+    
+    };      
+});
+// $(window).scroll(function() {
+//     $(".nav-toggle").trigger('click');
+//     $(window).unbind('scroll');
+// });
+
 
 $(window).scroll(function() {
 // 100 = The point you would like to fade the nav in.
@@ -217,4 +255,6 @@ $(window).scroll(function() {
     };
 
 })(jQuery, window);
+
+
 
