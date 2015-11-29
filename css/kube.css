@@ -4170,10 +4170,17 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJUlEQVQIW2
   height: auto;
   padding-top: 4em;
 }
+.section-about h2 {
+  padding-bottom: 0.6em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 4.5em;
+}
 .section-about p {
   font-family: 'Lora', serif;
-  font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  letter-spacing: 0.03em;
+  padding-bottom: 0.5em;
 }
 /*work.html*/
 .banner {
@@ -4308,6 +4315,24 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJUlEQVQIW2
   #splash h1.subheading {
     font-size: 2em;
   }
+  .section-work p {
+    font-family: 'Lora', serif;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    letter-spacing: 0.04em;
+    padding-bottom: 0.3em;
+  }
+  .section-work h2 {
+    padding-top: 1.2em;
+    padding-bottom: 0.6em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 4.1em;
+  }
+  figure {
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+  }
 }
 @media only screen and (max-width: 767px) {
   .show {
@@ -4352,5 +4377,12 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJUlEQVQIW2
   }
   .section-work {
     padding-top: 1em;
+  }
+  .section-work h2 {
+    padding-top: 1.2em;
+    padding-bottom: 0.6em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 3em;
   }
 }
