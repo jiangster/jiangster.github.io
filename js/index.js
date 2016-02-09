@@ -13,7 +13,7 @@ $(document).ready(function() {
 $(window).scroll(function() {
 // 100 = The point you would like to fade the nav in.
   
-    if ($(window).scrollTop() > 250 ){
+    if ($(window).scrollTop() > 450 ){
     
         $(".cbp-spmenu").css("background","white");
     
