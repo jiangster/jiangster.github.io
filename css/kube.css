@@ -8,7 +8,6 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin:400,500,600);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 @font-face {
@@ -3846,16 +3845,19 @@ section a {
   text-align: left;
   padding-top: 6em;
   padding-bottom: 3em;
+  bottom: 0;
 }
-.footer p {
-  font-family: "Source Sans Pro", serif;
-  font-weight: 300;
-  color: #323232;
+.footer h2 {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: #666666;
+  font-size: 0.9em;
 }
 .footer a {
   text-decoration: none;
   color: #4c4c4c;
-  font-family: "Roboto Slab", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 .footer a:hover {
@@ -3864,8 +3866,9 @@ section a {
 .footer blockquote {
   opacity: 0.7;
   font-size: 1em;
-  font-style: normal;
   font-weight: 300;
+  font-family: "Vollkorn", sans-serif;
+  font-style: normal;
 }
 .bg {
   position: fixed;
@@ -3905,6 +3908,19 @@ section a {
 
 		}
 	}*/
+.links {
+  text-decoration: none;
+  font-family: "Vollkorn", sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  margin: 0.7em;
+  display: inline-block;
+  /*	border-bottom: 1px #9d9d9d solid;
+*/
+  color: #886e9a;
+}
 .nav-toggle span,
 .nav-toggle span:before,
 .nav-toggle span:after {
