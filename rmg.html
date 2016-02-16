@@ -41,7 +41,7 @@
             </nav>
 
 
-            <header style="background-color:#79C5D4;">
+            <header style="background-color:#b4c1c8;">
               <div class="units-row">
                 <div class="unit-60 centered">
                   <div id="worktitle" class="slide-top">
@@ -64,29 +64,75 @@
               <div class="section-work">
 
 
-
-
                 <div class="units-row end">
                   <div class="unit-centered unit-40">
 
                     <h1>About</h1>
-                    <p>
-                      RMG - Random Music Generator - is an app developed by <a href="http://wavy.space"  target="_blank">Xingbo Wang</a> that procedurally generates tunes. It allows users to easily finetune musical properties and export to MIDI. </p>
+                    <p class="subheader">
+                      RMG - Random Music Generator - is an app developed by <a href="http://wavy.space" target="_blank">Xingbo Wang</a> that procedurally generates tunes. Its purpose is to allow users such as game makers and videographers conveniently customize and export unique music for immediate use in production. As such, the app design needed to be just as convenient and intuitive.</p>
 
                       <p>In this project I worked closely with Xingbo as a UX/UI designer to translate the functioning prototype into a cohesive app design. My workflow consisted of:<br>
-                        1. Breaking down the user stories, flow, and task analyses<br>
-                        2. Creating sitemaps, wireframes, and high fidelity mockups<br>
-                        3. Conducting usability tests to validate design<br>
-                        4. Developing a cohesive visual language (branding TBD)</p>
+                        &emsp; 1. Breaking down the user stories, flow, and task analyses<br>
+                        &emsp; 2. Creating sitemaps, wireframes, and high fidelity mockups<br>
+                        &emsp; 3. Conducting usability tests to validate design<br>
+                        &emsp; 4. Developing a cohesive visual language (branding TBD)<br>
+                        <br>
+                        Check out the design and process below!</p>
                         <br><br>
                        </div>
                      </div>
 
+                     
+
                      <div class="image-section">
+
+                  <div class="units-row end">
+                  <div class="unit-centered unit-40">
+                      <h2>How RMG Works</h2>
+                      <p>With a few taps of a button, users can generate a unique piece of music with ease, save to Favourites, and later revisit and adjust musical settings. Each unique tune has a unique vector for its visualization.</p>
+                      </div>
+                      </div>
+
+                <div class="units-row end">
+                  <div class="unit-centered unit-60">
+                  <figure>
+                  <img src="img/rmghowto.png" alt="add to favourites"/>
+                  </figure>
+              </div>
+              </div>
+
+
+                <div class="units-row end">
+                  <div class="unit-centered unit-60">
+                  <div class="units-row">
+                  <div class="unit-33">
+                   <figure>
+                   <figcaption>Adding a tune to favourites:</figcaption>
+                    <img src="img/Add to faves@2x.png" alt="add to favourites"/>
+                  </figure>
+                  </div>
+                  <div class="unit-33">
+                   <figure>
+                   <figcaption>Favourites List</figcaption>
+                    <img src="img/Favourites@2x.png" alt="now playing"/>
+                  </figure>
+                  </div>
+                  <div class="unit-33">
+                   <figure>
+                   <figcaption>Deleting a Favourite</figcaption>
+                    <img src="img/Favourites delete@2x.png" alt="generate custom"/>
+                  </figure>
+                  </div> 
+                </div>
+              </div>
+              </div>
+              </div>
+
                        <div class="units-row end">
                         <div class="unit-centered unit-40">
-                         <h2>Process</h2>
-                         <p>RMG is used primarily for three functions: <em> customizing, saving, listening to tunes</em>. I sketched out various userflows and sitemaps, connecting relevant interactions and simplifying each step across for every iteration. For example: customization and randomization are like the chicken and the egg — either function can be initiated first in this case, thus demanding a looped interaction in the design. The challenge was how to design the app to seamlessly integrates the two functions. </p>
+                        <br><br>
+                         <h1>Design Process</h1>
+                         <p>RMG is used primarily for three functions: <em> customizing, saving, and listening to tunes</em>. I sketched out various userflows and sitemaps, connecting relevant interactions and simplifying each step across for every iteration. For example: customization and randomization are like the chicken and the egg — either function can be initiated first in this case, thus demanding a looped interaction in the design. The challenge was how to design the app to seamlessly integrates the two functions. </p>
                          </div>
                          </div>
                       <div class="unit-centered unit-60">
@@ -99,6 +145,7 @@
 
                          <div class="units-row end">
                         <div class="unit-centered unit-40">
+                        <h2>Wireframes</h2>
                          <p>The userflow was simplified to the version below. I created a set of monochromatic wireframes to focus on the usability and effectiveness of the experience.</p>
                          </div>
                          </div>
@@ -109,41 +156,31 @@
                            </figure>
                            </div>
                            </div>
-                 </div>
+
 
                  <div class="units-row end">
                   <div class="unit-centered unit-40">
-                    <br><br>
-                    <h2>A/B Testing</h2>
-                    <p>Gestures and animations were taken into consideration during the design process. For example, when users tap "Customize," the intention is for the playback screen to minimize and float either up (Version A) or down (Version B). Though it initially seemed counterintuitive to animate the playback from the bottom of the screen to the top, users responded more positively to Version A because it became more comfortable to interact with the customization screen as it is closer to where fingers can reach.</p>
+                    <h2>Smooth Transitions</h2>
+                    <p>When UX animations are done properly, an app flows like a cohesive story. When designing RMG I took into consideration the transitions between screens, such as the "Now Playing" screen to "Customization Settings." The intention is to minimize the playback section when a user wants to tinker with a few settings, rather than slapping another screen on. This ensures that the central character is still the music and that users are not abruptly taken into another environment. Below are two layouts which I've tested with users, with layout A being most preferred. </p>
                   </div>
                 </div>
 
 
                 <div class="units-row end">
                   <div class="unit-centered unit-60">
-                  <div class="units-row">
-                  <div class="unit-50">
                    <figure>
-                   <figcaption>Version A</figcaption>
-                    <img src="img/rmgcomparisona.png" alt="version a"/>
+                   <figcaption>Comparison</figcaption>
+                    <img src="img/rmgcomparison.png" alt="rmg comparison"/>
                   </figure>
-                  </div>
-                  <div class="unit-50">
-                   <figure>
-                   <figcaption>Version B</figcaption>
-                    <img src="img/rmgcomparisonb.png" alt="version b"/>
-                  </figure>
-                  </div> 
-                </div>
               </div>
               </div>
+              <br><br>
 
                      <div class="image-section">
                  <div class="units-row end">
                   <div class="unit-centered unit-40">
                     <h1>Visual Language</h1>
-                    <p>RMG generates unique tunes, and so one challenge was giving each tune an identity. Each tune is visualized by a unique vector shape.</p>
+                    <p>How is music normally visualized? And how can I give each tune a unique identity (seeing as this app is mainly used to generate random tunes)? This was a fun challenge I encountered when deciding on the visual language. Majority of music apps use album art and equalizers for visualizations. After two weeks of analyzing music app designs on Pinterest and Dribbble I decided upon using a unique, floating vector shape which gives RMG a futuristic, edgy look.</p>
                   </div>
                 </div>
 
@@ -157,7 +194,7 @@
 
                  <div class="units-row end">
                   <div class="unit-centered unit-40">
-                    <p>Simplicity was key to the design without sacrificing understanding and usability. I created clean, sleek screens that simplified interactions, tasks and ideas.</p>
+                    <p>Simplicity was key to the design without sacrificing understanding and usability. I created clean, sleek screens that simplified tasks while promoting reoccuring ideas (such as the omnipresent vector shape).</p>
                   </div>
                 </div>
 
@@ -171,7 +208,7 @@
                   </div>
                   <div class="unit-33">
                    <figure>
-                    <img src="img/Now playing@2x.png" alt="version b"/>
+                    <img src="img/Now playing details@2x.png" alt="version b"/>
                   </figure>
                   </div> 
                   <div class="unit-33">
@@ -185,7 +222,8 @@
               </div>
 
 
-              <div class="image-section" style="background-color:#79C5D4">
+              <div class="image-section" style="background-color:#b4c1c8">
+              <br><br>
                <div class="units-row end">
 <!--                 <div class="unit-centered unit-40">
                  <h2>Final Look</h2>
@@ -203,7 +241,7 @@
     </div>
 
 
-    <div class="back-next text-centered" style="background-color: #79C5D4">
+    <div class="back-next text-centered" style="background-color: #b4c1c8">
     <a href="stories.html">Building Stories &rarr;</a>
     </div>
 
