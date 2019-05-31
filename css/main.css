@@ -13,13 +13,13 @@ html  {
 /* Links */
 a {
     text-decoration: none;
-    color: #c95a5d;
+    color: #666;
     -webkit-transition: all 300ms ease-in-out;
        -moz-transition: all 300ms ease-in-out;
             transition: all 300ms ease-in-out;
 }
     a:hover {
-        color: #7C2B2D;
+        color: #000;
     }
 
 .lead {
@@ -60,6 +60,10 @@ a {
     .banner a:hover {
         color: #7C2B2D;
     }
+
+.gif {
+    position: relative;
+}
 
 /* Logo */
 .logo {

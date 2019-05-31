@@ -2657,7 +2657,7 @@ select.unit-100 {
 }
 /* =Responsive
 -----------------------------------------------------------------------------*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .mobile-width-100 {
     width: 100%;
   }
@@ -2787,7 +2787,7 @@ select.unit-100 {
 }
 /* =Responsive
 -----------------------------------------------------------------------------*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .blocks-2,
   .blocks-3,
   .blocks-4,
@@ -3069,7 +3069,7 @@ input[type="search"] {
 }
 /* =Mobile (Portrait)
 -----------------------------------------------------------------------------*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .forms-list label {
     display: inline-block;
   }
@@ -3306,7 +3306,7 @@ input[type="search"] {
 }
 /* =Responsive
 -----------------------------------------------------------------------------*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .navbar-left,
   .navbar-right,
   .navbar ul li,
@@ -3676,7 +3676,7 @@ input[type="search"] {
 }
 /* =Responsive
 -----------------------------------------------------------------------------*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .left,
   .right {
     float: none;
@@ -3829,7 +3829,7 @@ section {
   position: relative;
   background-color: white;
   z-index: 200;
-  top: 30em;
+  top: 35em;
 }
 section a {
   text-decoration: none;
@@ -3837,11 +3837,13 @@ section a {
   font-weight: bold;
   cursor: pointer;
 }
+
+
 .footer {
   display: block;
   height: auto;
   width: 100%;
-  background-color: #efefef;
+  background-color: #f9f9f9;
   text-align: left;
   padding-top: 6em;
   padding-bottom: 3em;
@@ -3850,7 +3852,7 @@ section a {
 .footer h2 {
   font-family: "Cabin", sans-serif;
   font-weight: 400;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   color: #666666;
   font-size: 0.9em;
 }
@@ -3865,7 +3867,7 @@ section a {
 }
 .footer blockquote {
   opacity: 0.7;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 300;
   font-family: "Vollkorn", sans-serif;
   font-style: normal;
@@ -3912,7 +3914,7 @@ section a {
   text-decoration: none;
   font-family: "Vollkorn", sans-serif;
   font-size: 1.1em;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.1em;
   font-style: italic;
   margin: 0.7em;
@@ -3972,7 +3974,7 @@ section a {
   font-weight: 600;
   font-size: 0.9em;
   /*		font-style: italic;*/
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
 }
 .cbp-spmenu h2 :hover {
   color: #000000;
@@ -4064,7 +4066,7 @@ section a {
     padding-left: 0.5em;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .cbp-spmenu-horizontal {
     font-size: 70%;
     height: 110px;
@@ -4121,15 +4123,15 @@ section a {
   font-size: 2.5em;
   left: 0;
   /*			letter-spacing: 0.05em;*/
-  font-weight: 400;
+  font-weight: 500;
   font-family: 'Open Sans', sans-serif;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   color: #000000;
 }
 #splash h1.subheading {
   margin-top: -0.5em;
   font-size: 1.4em;
-  line-height: 150%;
+  line-height: 170%;
   color: #4c4c4c;
   right: 0;
   font-weight: 400;
@@ -4144,7 +4146,7 @@ section a {
 }
 .block-full {
   height: 30em;
-  margin-bottom: 4em;
+  margin-bottom: 5em;
 }
 .item {
   position: relative;
@@ -4242,7 +4244,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJUlEQVQIW2
 }
 #worktitle h1 {
   font-size: 2.5em;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   font-weight: 400;
   font-family: 'Cabin', serif;
   color: #000000;
@@ -4251,7 +4253,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJUlEQVQIW2
   margin-top: -0.8em;
   font-size: 1.5em;
   line-height: 130%;
-  color: #323232;
+  color: rgba(0, 0, 0, 0.5);
   line-height: -0.1em;
   font-weight: 400;
   font-family: "Vollkorn", sans-serif;
@@ -4298,7 +4300,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJUlEQVQIW2
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 2em;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.04em;
   text-align: left;
 }
 .section-work h2 {
@@ -4313,9 +4315,9 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJUlEQVQIW2
 .section-work p {
   font-family: "Open Sans", sans-serif;
   line-height: 1.8em;
-  font-size: 1.1em;
+  font-size: 1.15em;
   padding-bottom: 2em;
-  color: #4c4c4c;
+  color: rgba(0, 0, 0, 0.7);
   text-align: left;
   font-weight: 400;
 }
@@ -4327,9 +4329,23 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJUlEQVQIW2
   text-align: left;
   font-weight: 400;
 }
+
+.section-work ul {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8em;
+  font-size: 1.1em;
+  color: #4c4c4c;
+  text-align: left;
+  font-weight: 400;
+}
+
+.section-work li {
+  margin-bottom: 0.2em;
+}
+
 .section-work .subheader {
-  font-size: 1.2em;
-  line-height: 2em;
+  font-size: 1.25em;
+  line-height: 1.8em;
   font-weight: 400;
   letter-spacing: 0.05em;
 }
@@ -4342,6 +4358,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJUlEQVQIW2
 }
 .section-work figcaption {
   padding-bottom: 1em;
+  padding-top: 1em;
   color: #3d3d3d;
   font-size: 1em;
   text-align: center;
@@ -4442,7 +4459,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJUlEQVQIW2
     padding-bottom: 0.6em;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .show {
     opacity: 1;
   }
@@ -4508,14 +4525,15 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJUlEQVQIW2
   .section-work h2 {
     font-size: 1.3em;
     padding-top: 0em;
+    padding-bottom: 0.4em;
   }
   .section-work p {
     text-align: left;
-    font-size: 1em;
-    padding-bottom: 0em;
+    font-size: 1.2em;
+    padding-bottom: 0.1em;
   }
   .section-work h1 {
-    font-size: 1.5em;
+    font-size: 1.6em;
     padding-top: 1.5em;
   }
   .image-section {
