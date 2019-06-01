@@ -123,7 +123,7 @@
                     <h1>Exploration</h1>
                     <h2>Challenges of integrating wallets</h2>
 
-                    <p>We wanted to let buyers quickly checkout an item from the product page, but it wasn't as simple as adding a "Buy now" button. Apart from regular checkout forms, Shopify supports a number of digital wallets — such as PayPal and Apple Pay — that let buyers accelerate checkout with their saved information, and every online store had a different combination of these. We had to make sure buyers had access to their preferred wallet without overwhelming them with options, and without adding complexity to the product page.</p>
+                    <p>So we wanted to let buyers quickly checkout an item from the product page. You'd think the solution was as simple as adding a "Buy now" button, but turns out it was much more complicated due to the involvement of wallets. Apart from regular checkout forms, Shopify supports a number of digital wallets — such as PayPal and Apple Pay — that let buyers accelerate checkout with their saved information, and every online store had a different combination of these. We had to make sure buyers had access to their preferred wallet without overwhelming them with options, and without adding complexity to the product page.</p>
                     <figure>
                       <img src="img/DC - wallets.png" alt="user flow 2"/>
                     </figure>
@@ -143,7 +143,7 @@
                 <div class="units-row end">
                   <div class="unit-centered unit-40">
                     <h2>Evolving the classic checkout button</h2>
-                    <p>Merchants can enable up to 6 digital wallets (and more to come), which are typically the colorful buttons you see at checkout. In bringing these options to the product page, I wanted to reduce the button noise and make the call to action simple and clear. We explored two different directions - one with branding and one without. </p>
+                    <p>Merchants can enable up to 6 digital wallets (and more to come), which are typically the colorful buttons you see at checkout. In bringing these options to the product page, I wanted to reduce the button noise and make the call to action simple and clear. We explored two different directions - one with branding (ex. "Buy with Apple Pay") and one without ("Buy now"). </p>
                   </div>
                 </div>
 
@@ -153,13 +153,13 @@
                     <div class="units-row">
                       <div class="unit-50">
                        <figure>
-                        <img src="img/DC - unbranded button.png" alt="add to favourites"/>
+                        <img src="img/DC - unbranded button.png" alt="unbranded button explorations"/>
                         <figcaption>Unbranded button explorations</figcaption>
                       </figure>
                     </div>
                     <div class="unit-50">
                      <figure>
-                      <img src="img/DC - branded button.png" alt="now playing"/>
+                      <img src="img/DC - branded button.png" alt="branded button explorations"/>
                       <figcaption>Branded button explorations</figcaption>
                     </figure>
                   </div>
@@ -170,11 +170,11 @@
 
             <div class="units-row end">
               <div class="unit-centered unit-40">
-                <p>The unbranded direction is straight forward and keeps the product page clean, but adds an additional click while hiding branding benefits. The branded direction adds a bit of noise and is harder to integrate into the product page, but there's opportunity here to personalize what we show to the buyer. Around this time we conducted user research on the effects of brand recogition, which confirmed that showing a familiar brand can make buyers more comfortable and trusting with checking out directly from the product page.
+                <p>The unbranded direction is straight forward and keeps the product page clean, but adds an additional click while hiding branding benefits. The branded direction adds a bit of noise and is harder to integrate into the product page, but there's opportunity here to personalize what we show to the buyer. <br><br>Around this time we conducted user research on the effects of brand recogition, which confirmed that showing a familiar brand can make buyers more comfortable and trusting with checking out directly from the product page. This gave us the confidence to pursue a branded direction.
                 </p>
 
                 <h2>Enabling discounts</h2>
-                <p>Discounts were tricky to integrate outside the cart/checkout, and there's always a fine line between advertising them too much (which encourages buyers to go on a hunt), and keeping it too hidden (which is frustrating for customers who are looking for them). Here I played around with a couple of different designs. In the end we opted for a sheet design, which adds less noise to the product page.
+                <p>Discounts were tricky to integrate outside the cart/checkout, and there's always a fine line between advertising them too much (which encourages buyers to go on a hunt), and keeping it too hidden (which is frustrating for customers who are looking for them). Here I played around with a couple of different designs. 
                 </p>
 
                 <figure>
@@ -197,18 +197,11 @@
             <div class="units-row end">
               <div class="unit-centered unit-40">
 
-                <p>That being said, nailing the dynamic behaviour was more complicated than it sounds. We had to make sure that the decision-making in the background does not compromise page load or the browsing experience, and that a check for the preferred wallet is consistent across the browsing experience for each buyer.</p>
-
-                <figure>
-                  <img src="img/DC - button logic.png" alt="defaulting logic"/>
-                  <figcaption>Some of the defaulting logic</figcaption>
-                </figure>
-
 
                 <h2>Introducing dynamic behaviour</h2>
-                <p> To optimize for a clear CTA and wallet brand recognition, we decided to explore a dynamic design where we could show a single checkout button that changes depending on what each customer is most likely to use. This is what we call the "preferred" wallet. Working closely with our backend devs and data scientists, we came up with an algorithm to detect this preference based on a variety of factors, such as wallet data, checkout history and device and browser compatability. 
+                <p> During some user testing, we found that participants were finding branded dropdowns and segmented dropdowns to be slightly confusing. It wasn't clear what was the main call to action, and it was hard to tap on smaller screens. So we tried steering away from complex buttons and explored a dynamic design where we could show a single checkout button that changes depending on what each customer is most likely to use. This is what we call the "preferred" wallet. Working closely with our backend devs and data scientists, we came up with an algorithm to detect this preference based on a variety of factors, such as wallet data, checkout history and device and browser compatability. 
                   <br><br>
-                  For example, buyer A is an Apple Pay user and is on a device and browser that supports the wallet. The merchant supports Apple Pay, and so we'll show an Apple Pay button. Buyer B doesn't have a relationship with any wallet. Thus we'll show the standard "Buy now" button that goes to regular checkout.
+                  For example, buyer A is an Apple Pay user and is on a device and browser that supports the wallet. The merchant supports Apple Pay, and so we'll show an Apple Pay button. Buyer B doesn't have a relationship with any wallet. Thus we'll show the standard "Buy now" button that goes to regular checkout. This removes the complexity from the product page, and also prevents us from showing options that buyers won't be likely to use.
                 </p>
               </div>
             </div>
@@ -235,6 +228,19 @@
           </div>
         </div>
 
+        <div class="units-row end">
+              <div class="unit-centered unit-40">
+
+                        <p>That being said, nailing the dynamic behaviour was more complicated than it sounds. We had to make sure that the decision-making in the background does not compromise page load or the browsing experience, and that a check for the preferred wallet is consistent across the browsing experience for each buyer.</p>
+
+                <figure>
+                  <img src="img/DC - button logic.png" alt="defaulting logic"/>
+                  <figcaption>Some of the defaulting logic</figcaption>
+                </figure>
+
+
+              </div>
+            </div>
 
         <div class="units-row end">
           <div class="unit-centered unit-40">
@@ -270,7 +276,8 @@
   <div class="units-row end">
     <div class="unit-centered unit-40">
       <h1>Rollout</h1>
-      <p>This phase of the project was actually the most complicated. Unlike marketplaces like Etsy or Amazon, Shopify stores are customized on top of 70+ themes, most of which are created by developers outside of Shopify. Every theme has its own color palette, type, layout and customizable components, which meant that any new feature - even a simple button - had to be meticulously fitted across all themes. To do this I worked closely with the Themes team to integrate it on Shopify's free themes, and we created a UI guidelines for third party developers. Although this took much longer than we expected, finally seeing the feature across these beautiful themes was a satisfying experience!</p>
+      <p>This phase of the project was actually the most complicated. Unlike marketplaces like Etsy or Amazon, Shopify stores are customized on top of 70+ themes, most of which are created by developers outside of Shopify. Every theme has its own color palette, type, layout and customizable components, which meant that any new feature - even a simple button - had to be meticulously fitted across all themes. To do this I worked closely with the Themes team to integrate it on Shopify's free themes, and we created a UI guidelines for third party developers. Although this took much longer than we expected, finally seeing the feature across these beautiful themes was a satisfying experience!<br><br>
+      Despite having no marketing push other than a simple home card, we saw a huge number of merchants adopting the feature. Since our initial rollout we've had 60k+ turn on dynamic checkout, including the ever popular Fashion Nova (see below). 🎉</p>
     </div>
   </div>
 
@@ -287,7 +294,7 @@
       <h2>Learnings</h2>
       <ul>
         <li><b>Start with the forest, then zoom down to the trees.</b> It’s so easy to focus on the details and miss out on the bigger picture. At the beginning of this project, we paid a lot of attention to the checkout button, but we soon realized that the bigger, more complex problems involved things like feature discovery, theme integration, and rollout. Needless to say, as a product designer it’s critical to consider the end to end process and to make sure we’re not just solving the visual aspect of the problem.</li><br>
-        <li><b>Wireframes are definitely not dead.</b> Because this project had revolved so heavily around a single button, I dove right into high fidelity mockups before realizing how distracting that was! I don’t think every project needs wireframes, but contrary to a lot of recent online opinions I think it's incredibly useful tool to help align the team and stakeholders on foundational things like structure and user flow before adding the cherry on top — even if it’s simple UI to begin with.</li><br>
+        <li><b>It's ok to use wireframes for simple UI.</b> Because this project had revolved so heavily around a single button, I dove right into high fidelity mockups before realizing how distracting that was! I don’t think every project needs wireframes, but contrary to a lot of recent online opinions it's still an incredibly useful tool to help align the team and stakeholders on foundational things like structure and user flow before adding the cherry on top — even if it’s simple UI to begin with.</li><br>
         <li><b>Don't overcomplicate things.</b> As a designer it's always tempting to find <i>that original design</i>, and teams tend to want to solve many problems at once. Looking back there were a lot more shortcuts we could've taken to reach an MVP, so that we could test earlier and ship faster. </li>
       </ul>
     </div>
