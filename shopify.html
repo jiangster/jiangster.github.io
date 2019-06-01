@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lily - Dynamic checkout</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Main  -->
+  <link rel="stylesheet" href="css/kube.css" type="text/css" media="all" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+
+</head>
+
+<body class="cbp-spmenu-push">
+
+<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+          <![endif]-->
+          <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+            <div class="units-row">
+              <div class="unit-60 centered">
+                <div class="unit-50" id="nav-left">
+                  <h2><a href="index.html">LILY JIANG</a></h2>
+                </div>
+                <div class="unit-50" id="nav-right">
+                  <div id="links">
+                    <a href="index.html#work" style="color: black">PROJECTS</a>
+                    <a href="about.html">ABOUT</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <nav class="navbar">
+            <ul>
+              <li><a class="nav-toggle" id="showRightPush"><span></span></a></li>
+            </ul>
+          </nav>
+
+
+          <header style="background-color:#979EE3;">
+            <div class="units-row">
+              <div class="unit-60 centered">
+                <div id="worktitle" class="slide-top">
+
+                  <div class="unit-100 end">
+                    <h1 class="text-centered">Dynamic Checkout</h1>
+                  </div>
+                  <div class="unit-100 end">
+                    <h1 class="subheading text-centered">Product Design</h1>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <img src="img/DC - header.png" alt="Shopify's dynamic checkout"/>
+          </header>
+
+
+          <section style="top:40em">
+            <div class="section-work">
+
+
+              <div class="units-row end">
+                <div class="unit-centered unit-40">
+                  <p class="subheader"><br><br><br>
+                  When was last time you bought something online? Chances are you’ve been to one of the 800k+ unique stores that uses Shopify’s checkout. Over the past few years I’ve had the pleasure of working with two amazing teams at Shopify to make buying online as frictionless as possible, transforming an otherwise tedious process (think long forms and confusing payment flows) into almost an invisible touch point. One of these projects is the dynamic checkout button.</p>
+
+                  <h1>Problem</h1>
+                  <p>Like most things in life, there's no “one-size-fits-all," and this applies to the checkout flow. Early on we noticed that most purchases that on Shopify stores are single-item checkouts, yet the current flow requires everyone to add to cart, navigate to cart, and then finally select checkout from a list of options.<br><br>
+
+                    Needless to say, this was a slower path for buyers who are ready to checkout a single product, especially in use cases such as flash sales and mobile shopping where convenience and speed is essential. Our goal was to remove this bottleneck by <b>bridging the gap between ready buyers and the appropriate checkout, and decreasing the time to order completion.</b>
+                  </p>
+                </div>
+              </div>
+
+              <div class="units-row end">
+                <div class="unit-centered unit-60">
+                  <figure>
+                    <img src="img/DC - problem 1.png" alt="user flow"/>
+                    <figcaption>Current single-item checkout flow</figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="units-row end">
+                <div class="unit-centered unit-60">
+                  <figure>
+                    <img src="img/DC - problem 2.png" alt="user flow 2"/>
+                    <figcaption>Ideal single-item checkout flow</figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="units-row end">
+                <div class="unit-centered unit-40">
+                  <h2>Buyer segments</h2>
+                  <ul>
+                    <li><b>High-intent buyers</b> – They've done their research, know what they want and are ready to buy</li>
+                    <li><b>Impulse buyers</b> – Those who buy without prior planning and typically require few touch points to reach a purchase decision</li>
+                    <li><b>Repeat buyers</b> –  whose trust is established and typically require fewer touch points to reach a purchase decision</li>
+                  </ul>
+                  <h2>Merchant segments</h2>
+                  <ul>
+                    <li>Stores with a single product or small catalog</li>
+                    <li>Stores with an average cart size of 1 item </li>
+                    <li>Stores running flash sales </li>
+                  </ul>
+                  <br><br>
+                </div>
+              </div>
+
+
+
+              <div class="image-section">
+
+
+                <div class="units-row end">
+                  <div class="unit-centered unit-40">
+                    <h1>Exploration</h1>
+                    <h2>Challenges of integrating wallets</h2>
+
+                    <p>We wanted to let buyers quickly checkout an item from the product page, but it wasn't as simple as adding a "Buy now" button. Apart from regular checkout forms, Shopify supports a number of digital wallets — such as PayPal and Apple Pay — that let buyers accelerate checkout with their saved information, and every online store had a different combination of these. We had to make sure buyers had access to their preferred wallet without overwhelming them with options, and without adding complexity to the product page.</p>
+                    <figure>
+                      <img src="img/DC - wallets.png" alt="user flow 2"/>
+                    </figure>
+                    <p>Another challenge was in supporting discounts. Discounts are vital driver of sales and essential for some customers, but most wallets don't have a discount step. Our mandate was to ensure that buyers are still able to apply a discount before continuing to an express checkout. </p>
+                  </div>
+                </div>
+
+                <div class="units-row end">
+                  <div class="unit-centered unit-60">
+                    <figure>
+                      <img src="img/DC - all wireframes.png" alt="user flow 2"/>
+                      <figcaption>Early explorations</figcaption>
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="units-row end">
+                  <div class="unit-centered unit-40">
+                    <h2>Evolving the classic checkout button</h2>
+                    <p>Merchants can enable up to 6 digital wallets (and more to come), which are typically the colorful buttons you see at checkout. In bringing these options to the product page, I wanted to reduce the button noise and make the call to action simple and clear. We explored two different directions - one with branding and one without. </p>
+                  </div>
+                </div>
+
+
+                <div class="units-row end">
+                  <div class="unit-centered unit-80">
+                    <div class="units-row">
+                      <div class="unit-50">
+                       <figure>
+                        <img src="img/DC - unbranded button.png" alt="add to favourites"/>
+                        <figcaption>Unbranded button explorations</figcaption>
+                      </figure>
+                    </div>
+                    <div class="unit-50">
+                     <figure>
+                      <img src="img/DC - branded button.png" alt="now playing"/>
+                      <figcaption>Branded button explorations</figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="units-row end">
+              <div class="unit-centered unit-40">
+                <p>The unbranded direction is straight forward and keeps the product page clean, but adds an additional click while hiding branding benefits. The branded direction adds a bit of noise and is harder to integrate into the product page, but there's opportunity here to personalize what we show to the buyer. Around this time we conducted user research on the effects of brand recogition, which confirmed that showing a familiar brand can make buyers more comfortable and trusting with checking out directly from the product page.
+                </p>
+
+                <h2>Enabling discounts</h2>
+                <p>Discounts were tricky to integrate outside the cart/checkout, and there's always a fine line between advertising them too much (which encourages buyers to go on a hunt), and keeping it too hidden (which is frustrating for customers who are looking for them). Here I played around with a couple of different designs. In the end we opted for a sheet design, which adds less noise to the product page.
+                </p>
+
+                <figure>
+                  <img src="img/DC - discount exploration 1.png" alt="defaulting logic"/>
+                  <figcaption>Exploration - in-context field</figcaption>
+                </figure>
+
+                <figure>
+                  <img src="img/DC - discount exploration 2.png" alt="defaulting logic"/>
+                  <figcaption>Exploration - bottom sheet</figcaption>
+                </figure>
+
+
+              </div>
+            </div>
+
+
+
+
+            <div class="units-row end">
+              <div class="unit-centered unit-40">
+
+                <p>That being said, nailing the dynamic behaviour was more complicated than it sounds. We had to make sure that the decision-making in the background does not compromise page load or the browsing experience, and that a check for the preferred wallet is consistent across the browsing experience for each buyer.</p>
+
+                <figure>
+                  <img src="img/DC - button logic.png" alt="defaulting logic"/>
+                  <figcaption>Some of the defaulting logic</figcaption>
+                </figure>
+
+
+                <h2>Introducing dynamic behaviour</h2>
+                <p> To optimize for a clear CTA and wallet brand recognition, we decided to explore a dynamic design where we could show a single checkout button that changes depending on what each customer is most likely to use. This is what we call the "preferred" wallet. Working closely with our backend devs and data scientists, we came up with an algorithm to detect this preference based on a variety of factors, such as wallet data, checkout history and device and browser compatability. 
+                  <br><br>
+                  For example, buyer A is an Apple Pay user and is on a device and browser that supports the wallet. The merchant supports Apple Pay, and so we'll show an Apple Pay button. Buyer B doesn't have a relationship with any wallet. Thus we'll show the standard "Buy now" button that goes to regular checkout.
+                </p>
+              </div>
+            </div>
+            <div class="units-row end">
+              <div class="unit-centered unit-40">
+                <div class="units-row">
+                  <div class="unit-50">
+                    <dlv class="gif">
+                     <figure>
+                      <img id="element" class="gifplayer" src="img/DC - apple pay flow.gif" alt="add to favourites"/>
+                      <figcaption>Buyer A - Apple Pay user</figcaption>
+                    </figure>
+                  </dlv>
+                </div>
+                <div class="unit-50">
+                  <div class="gif">
+                   <figure>
+                    <img id="element" class="gifplayer" src="img/DC - buy now flow.gif" alt="now playing"/>
+                    <figcaption>Buyer B - no wallet detected</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="units-row end">
+          <div class="unit-centered unit-40">
+
+            <h2>Merchant-facing experience</h2>
+            <p>
+              On the other side of the coin, we had to design the merchant experience which includes feature discovery, theme settings and customization. We decided to use a home card to announce the new feature to existing merchants, whereas new merchants would have the feature enabled by default. Because we were introducing a new behaviour, it was tricky to illustrate the dynamic nature of the button without overcomplicating the feature. Some of our setting explorations include having a dynamic preview in the theme editor, as well as a reminder of the express methods that have been enabled on the store. In the end we opted for a simple checkbox with a quick description to a Learn more for this rollout.
+            </p>
+          </div>
+        </div>
+
+        <div class="units-row end">
+          <div class="unit-centered unit-80">
+            <div class="units-row">
+              <div class="unit-50">
+               <figure>
+                <img src="img/DC - home feed.png" alt="add to favourites"/>
+                <figcaption>Home card announcement (illustration by Alek Mackie)</figcaption>
+              </figure>
+            </div>
+            <div class="unit-50">
+             <figure>
+              <img src="img/DC - theme settings.png" alt="now playing"/>
+              <figcaption>Theme editor setting</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="units-row end">
+    <div class="unit-centered unit-40">
+      <h1>Rollout</h1>
+      <p>This phase of the project was actually the most complicated. Unlike marketplaces like Etsy or Amazon, Shopify stores are customized on top of 70+ themes, most of which are created by developers outside of Shopify. Every theme has its own color palette, type, layout and customizable components, which meant that any new feature - even a simple button - had to be meticulously fitted across all themes. To do this I worked closely with the Themes team to integrate it on Shopify's free themes, and we created a UI guidelines for third party developers. Although this took much longer than we expected, finally seeing the feature across these beautiful themes was a satisfying experience!</p>
+    </div>
+  </div>
+
+  <div class="units-row end">
+    <div class="unit-centered unit-80">
+      <figure>
+        <img src="img/DC - rollout.png" alt="user flow 2"/>
+        <figcaption>Shopify stores and current themes</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="units-row end">
+    <div class="unit-centered unit-40">
+      <h2>Learnings</h2>
+      <ul>
+        <li><b>Start with the forest, then zoom down to the trees.</b> It’s so easy to focus on the details and miss out on the bigger picture. At the beginning of this project, we paid a lot of attention to the checkout button, but we soon realized that the bigger, more complex problems involved things like feature discovery, theme integration, and rollout. Needless to say, as a product designer it’s critical to consider the end to end process and to make sure we’re not just solving the visual aspect of the problem.</li><br>
+        <li><b>Wireframes are definitely not dead.</b> Because this project had revolved so heavily around a single button, I dove right into high fidelity mockups before realizing how distracting that was! I don’t think every project needs wireframes, but contrary to a lot of recent online opinions I think it's incredibly useful tool to help align the team and stakeholders on foundational things like structure and user flow before adding the cherry on top — even if it’s simple UI to begin with.</li><br>
+        <li><b>Don't overcomplicate things.</b> As a designer it's always tempting to find <i>that original design</i>, and teams tend to want to solve many problems at once. Looking back there were a lot more shortcuts we could've taken to reach an MVP, so that we could test earlier and ship faster. </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="units-row end">
+    <div class="unit-centered unit-40">
+      <h1>What's next</h1>
+      <p>This is by no means the end of the dynamic checkout project. We received a lot of valuable feedback from merchants and users, and we're excited to improve the feature. Some things in the pipeline include adding more clarity and control in merchant settings around the dynamic behaviour, revisiting the discount flow, removing button noise, and enabling better localization. This will also be the start of an entire checkout personalization, as we bring the intelligence to the our checkout forms.</p>
+    </div>
+  </div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="image-section" style="background-color:#fff">
+  <br><br>
+  <div class="units-row end">
+<!--                 <div class="unit-centered unit-40">
+                 <h2>Final Look</h2>
+                 <p>Here are the final mockups which I've created on Adobe Illustrator, featuring an identifiable brand and tone, modern interface and intuitive navigation.
+                  <br><br>
+                </p>
+              </div>  -->  
+            </div>          
+            <div class="unit-centered unit-60">
+              <div class="units-row">
+                <img src="img/DC - final mockup.png" alt="final mockups"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="back-next text-centered" style="background-color: #fff">
+          <a href="rmg.html">Random Music Generator &rarr;</a>
+        </div>
+
+
+        <div class="footer">
+          <div class="units-row end">
+            <div class="unit-60 centered">
+              <div class="units-row end">
+                <div class="unit-50">
+                  <h2>&copy; LILY JIANG 2019</h2>
+                </div>
+                <div class="unit-50">
+                  <blockquote>
+                    Why, sometimes I've believed as many as six impossible things before breakfast.<br>
+                    <small>Alice in Wonderland</small> 
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+
+
+
+    <script src="external/imgliquid/imgLiquid-min.js"></script>
+    <script src="external/sidemenu/classie.js"></script>
+    <script src="external/sidemenu/modernizr.custom.js"></script>
+    <script src="external/fadethis/jquery.fadethis.min.js"></script>
+
+
+    <script>
+      var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+      showRightPush = document.getElementById( 'showRightPush' ),
+      body = document.body;
+
+
+      showRightPush.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toleft' );
+        classie.toggle( menuRight, 'cbp-spmenu-open' );
+        disableOther( 'showRightPush' );
+      };
+
+      function disableOther( button ) {
+        if( button !== 'showRightPush' ) {
+          classie.toggle( showRightPush, 'disabled' );
+        }
+      }
+    </script>
+    <script>
+
+        // Set options
+        var options = {
+          offset: '#showHere',
+          classes: {
+            clone:   'banner--clone',
+            stick:   'banner--stick',
+            unstick: 'banner--unstick'
+          }
+        };
+
+      </script>
+
+      <script>$(window).fadeThis({
+        speed: 500,
+        offset: -800,
+        reverse: false,
+        distance: 0
+      });</script>
+    </body>
+
+    </html>
